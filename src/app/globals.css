@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ocean: #1B4F72;
+  --teal: #148F77;
+  --sunset: #E67E22;
+  --sky: #D6EAF8;
+  --text-dark: #2C3E50;
+  --text-gray: #5D6D7E;
+}
+
+body {
+  color: var(--text-dark);
+  background: #ffffff;
+  font-family: 'Pretendard', 'Apple SD Gothic Neo', Arial, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .gradient-ocean {
+    background: linear-gradient(135deg, #1B4F72 0%, #148F77 100%);
+  }
+  .gradient-sunset {
+    background: linear-gradient(135deg, #E67E22 0%, #F39C12 100%);
+  }
+  .gradient-hero {
+    background: linear-gradient(160deg, #0d3b5e 0%, #1a6b5a 50%, #1e8449 100%);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
