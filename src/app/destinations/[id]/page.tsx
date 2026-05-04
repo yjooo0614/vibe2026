@@ -60,8 +60,9 @@ const amenityIcons: Record<string, string> = {
   "화이트보드": "📋",
 };
 
-export default function AccommodationDetailPage({ params }: { params: { id: string } }) {
-  const acc = accommodations.find((a) => a.id === params.id);
+export default async function AccommodationDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const acc = accommodations.find((a) => a.id === id);
   if (!acc) return notFound();
 
   return (
