@@ -3,16 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --ocean: #1B4F72;
-  --teal: #148F77;
-  --sunset: #E67E22;
-  --sky: #D6EAF8;
-  --text-dark: #2C3E50;
-  --text-gray: #5D6D7E;
+  --primary: #6366F1;
+  --primary-dark: #4F46E5;
+  --violet: #8B5CF6;
+  --accent: #FB923C;
+  --accent-dark: #F97316;
+  --dark: #0F172A;
+  --text: #1E293B;
+  --muted: #64748B;
+  --soft-bg: #F8F7FF;
 }
 
 body {
-  color: var(--text-dark);
+  color: var(--text);
   background: #ffffff;
   font-family: 'Pretendard', 'Apple SD Gothic Neo', Arial, sans-serif;
 }
@@ -21,14 +24,23 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-  .gradient-ocean {
-    background: linear-gradient(135deg, #1B4F72 0%, #148F77 100%);
-  }
-  .gradient-sunset {
-    background: linear-gradient(135deg, #E67E22 0%, #F39C12 100%);
-  }
   .gradient-hero {
-    background: linear-gradient(160deg, #0d3b5e 0%, #1a6b5a 50%, #1e8449 100%);
+    background: linear-gradient(160deg, #0f0c29 0%, #302b63 55%, #0f3460 100%);
+  }
+  .gradient-primary {
+    background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+  }
+  .gradient-accent {
+    background: linear-gradient(135deg, #FB923C 0%, #F97316 100%);
+  }
+  .gradient-cta {
+    background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 50%, #6366F1 100%);
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #FB923C, #F472B6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
 
