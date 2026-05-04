@@ -5,6 +5,10 @@ import BookingWidget from "@/components/BookingWidget";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+export function generateStaticParams() {
+  return accommodations.map((a) => ({ id: a.id }));
+}
+
 function StarRow({ rating }: { rating: number }) {
   return (
     <div className="flex items-center gap-0.5">
