@@ -6,9 +6,9 @@ const benefits = [
   {
     icon: "💼",
     group: "직장인",
-    bg: "bg-indigo-50",
-    border: "border-indigo-100",
-    accent: "text-indigo-500",
+    bg: "bg-blue-50",
+    border: "border-blue-100",
+    accent: "text-[#3B82F6]",
     points: [
       "바다·산 전망의 쾌적한 업무 환경",
       "업무 후 바로 즐기는 관광·휴식",
@@ -18,9 +18,9 @@ const benefits = [
   {
     icon: "🏢",
     group: "기업·사장님",
-    bg: "bg-violet-50",
-    border: "border-violet-100",
-    accent: "text-violet-500",
+    bg: "bg-indigo-50",
+    border: "border-indigo-100",
+    accent: "text-indigo-500",
     points: [
       "직원 복지 향상으로 이직률 감소",
       "지원금 자동화로 간편한 복지 운영",
@@ -54,10 +54,10 @@ const benefits = [
 ];
 
 const steps = [
-  { step: "01", title: "기업 등록", desc: "플랫폼에 기업을 등록하고 직원 복지 프로그램을 설정합니다.", color: "bg-[#6366F1]" },
-  { step: "02", title: "숙소 선택", desc: "부산, 강원도, 제주 등 다양한 워케이션 숙소를 탐색합니다.", color: "bg-[#8B5CF6]" },
-  { step: "03", title: "지원금 자동 신청", desc: "복잡한 지원금 신청을 플랫폼이 자동으로 처리합니다.", color: "bg-[#FB923C]" },
-  { step: "04", title: "워케이션 시작", desc: "직원들이 아름다운 환경에서 일과 휴식을 함께 즐깁니다.", color: "bg-[#06B6D4]" },
+  { step: "01", title: "기업 등록", desc: "플랫폼에 기업을 등록하고 직원 복지 프로그램을 설정합니다.", color: "bg-[#0F2B5B]" },
+  { step: "02", title: "숙소 선택", desc: "부산, 강원도, 제주 등 다양한 워케이션 숙소를 탐색합니다.", color: "bg-[#1e3a8a]" },
+  { step: "03", title: "지원금 자동 신청", desc: "복잡한 지원금 신청을 플랫폼이 자동으로 처리합니다.", color: "bg-[#3B82F6]" },
+  { step: "04", title: "워케이션 시작", desc: "직원들이 아름다운 환경에서 일과 휴식을 함께 즐깁니다.", color: "bg-[#60A5FA]" },
 ];
 
 const destinations = [
@@ -82,25 +82,24 @@ export default function Home() {
       {/* Hero */}
       <section className="gradient-hero min-h-screen flex items-center relative overflow-hidden pt-16">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 right-10 w-96 h-96 bg-violet-500 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 left-10 w-80 h-80 bg-indigo-400 rounded-full blur-3xl" />
-          <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-pink-400 rounded-full blur-3xl" />
+          <div className="absolute top-10 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 left-10 w-80 h-80 bg-blue-400 rounded-full blur-3xl" />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
           <div className="max-w-3xl">
-            <span className="inline-block bg-white/10 backdrop-blur text-indigo-300 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-white/20">
+            <span className="inline-block bg-white/10 backdrop-blur text-blue-300 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-white/20">
               ✨ 워케이션 지원금 자동화 플랫폼
             </span>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-6">
               일도 하고,<br />
               <span className="text-gradient">쉬기도 하고</span>
             </h1>
-            <p className="text-xl md:text-2xl text-indigo-200 mb-10 leading-relaxed">
+            <p className="text-xl md:text-2xl text-blue-200 mb-10 leading-relaxed">
               바다가 보이는 창가에서 업무를, 퇴근 후엔 해변 산책을.<br />
               Work&Vacation이 복잡한 지원금 신청까지 자동으로 해결합니다.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/partner/company" className="px-8 py-4 bg-[#FB923C] text-white font-bold text-lg rounded-2xl hover:bg-[#F97316] transition-all shadow-lg shadow-orange-500/30 text-center">
+              <Link href="/partner/company" className="px-8 py-4 bg-[#3B82F6] text-white font-bold text-lg rounded-2xl hover:bg-[#2563EB] transition-all shadow-lg shadow-blue-500/40 text-center">
                 기업 무료 등록 →
               </Link>
               <Link href="/about" className="px-8 py-4 bg-white/10 backdrop-blur text-white font-bold text-lg rounded-2xl hover:bg-white/20 transition-all border border-white/20 text-center">
@@ -112,7 +111,7 @@ export default function Home() {
             {stats.map((s) => (
               <div key={s.label} className="bg-white/8 backdrop-blur rounded-2xl p-5 border border-white/10 hover:bg-white/15 transition-all">
                 <div className="text-3xl font-black text-white">{s.number}</div>
-                <div className="text-indigo-300 text-sm mt-1">{s.label}</div>
+                <div className="text-blue-300 text-sm mt-1">{s.label}</div>
               </div>
             ))}
           </div>
@@ -120,11 +119,11 @@ export default function Home() {
       </section>
 
       {/* Benefits */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-[#FB923C] font-semibold text-sm uppercase tracking-widest">모두가 이득</span>
-            <h2 className="text-4xl md:text-5xl font-black text-[#0F172A] mt-3">
+            <span className="text-[#3B82F6] font-semibold text-sm uppercase tracking-widest">모두가 이득</span>
+            <h2 className="text-4xl md:text-5xl font-black text-[#0F2B5B] mt-3">
               4가지 관점에서 바라보는<br />워케이션의 가치
             </h2>
           </div>
@@ -132,7 +131,7 @@ export default function Home() {
             {benefits.map((b) => (
               <div key={b.group} className={`${b.bg} border ${b.border} rounded-3xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300`}>
                 <div className="text-4xl mb-4">{b.icon}</div>
-                <h3 className="text-xl font-black text-[#0F172A] mb-4">{b.group}</h3>
+                <h3 className="text-xl font-black text-[#0F2B5B] mb-4">{b.group}</h3>
                 <ul className="space-y-2">
                   {b.points.map((p) => (
                     <li key={p} className="flex items-start gap-2 text-sm text-[#64748B]">
@@ -148,22 +147,22 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section className="py-24 bg-[#F8F7FF]">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-[#8B5CF6] font-semibold text-sm uppercase tracking-widest">간편한 시작</span>
-            <h2 className="text-4xl md:text-5xl font-black text-[#0F172A] mt-3">
+            <span className="text-[#3B82F6] font-semibold text-sm uppercase tracking-widest">간편한 시작</span>
+            <h2 className="text-4xl md:text-5xl font-black text-[#0F2B5B] mt-3">
               4단계로 완성되는 워케이션
             </h2>
           </div>
           <div className="grid md:grid-cols-4 gap-8 relative">
-            <div className="hidden md:block absolute top-12 left-[12%] right-[12%] h-0.5 bg-gradient-to-r from-[#6366F1] via-[#8B5CF6] to-[#FB923C] opacity-30" />
+            <div className="hidden md:block absolute top-12 left-[12%] right-[12%] h-0.5 bg-gradient-to-r from-[#0F2B5B] via-[#3B82F6] to-[#60A5FA] opacity-30" />
             {steps.map((s) => (
               <div key={s.step} className="text-center relative">
                 <div className={`w-24 h-24 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white font-black text-2xl shadow-lg ${s.color}`}>
                   {s.step}
                 </div>
-                <h3 className="text-lg font-black text-[#0F172A] mb-2">{s.title}</h3>
+                <h3 className="text-lg font-black text-[#0F2B5B] mb-2">{s.title}</h3>
                 <p className="text-sm text-[#64748B] leading-relaxed">{s.desc}</p>
               </div>
             ))}
@@ -176,25 +175,25 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="inline-block bg-white/15 text-orange-300 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-white/20">
+              <span className="inline-block bg-white/15 text-blue-300 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-white/20">
                 핵심 기능
               </span>
               <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
                 지원금 신청,<br />
                 <span className="text-gradient">이제 자동으로</span>
               </h2>
-              <p className="text-indigo-200 text-lg leading-relaxed mb-8">
+              <p className="text-blue-200 text-lg leading-relaxed mb-8">
                 전국 지자체 워케이션 지원 프로그램과 연동된 플랫폼이 복잡한 서류 작업 없이 지원금 신청을 자동 처리합니다.
               </p>
               <ul className="space-y-4 mb-10">
                 {["지자체 연동 자동 매칭", "서류 자동 생성 및 제출", "지원금 진행 상태 실시간 알림", "최대 숙박비 70% 지원"].map((item) => (
                   <li key={item} className="flex items-center gap-3">
-                    <span className="w-6 h-6 bg-[#FB923C] rounded-full flex items-center justify-center text-sm flex-shrink-0 font-bold">✓</span>
-                    <span className="text-indigo-100">{item}</span>
+                    <span className="w-6 h-6 bg-[#3B82F6] rounded-full flex items-center justify-center text-sm flex-shrink-0 font-bold">✓</span>
+                    <span className="text-blue-100">{item}</span>
                   </li>
                 ))}
               </ul>
-              <Link href="/subsidy" className="inline-block px-8 py-4 bg-[#FB923C] text-white font-bold text-lg rounded-2xl hover:bg-[#F97316] transition-all shadow-lg shadow-orange-500/30">
+              <Link href="/subsidy" className="inline-block px-8 py-4 bg-[#3B82F6] text-white font-bold text-lg rounded-2xl hover:bg-[#2563EB] transition-all shadow-lg shadow-blue-500/40">
                 지원금 자세히 보기 →
               </Link>
             </div>
@@ -202,7 +201,7 @@ export default function Home() {
               <div className="text-center mb-6">
                 <div className="text-6xl mb-4">💰</div>
                 <h3 className="text-2xl font-black">지원금 계산기</h3>
-                <p className="text-indigo-300 text-sm mt-1">예상 지원금을 확인해보세요</p>
+                <p className="text-blue-300 text-sm mt-1">예상 지원금을 확인해보세요</p>
               </div>
               <div className="space-y-3">
                 {[
@@ -211,17 +210,17 @@ export default function Home() {
                   { label: "예상 숙박비", value: "₩3,000,000" },
                 ].map((r) => (
                   <div key={r.label} className="bg-white/10 rounded-2xl p-4">
-                    <div className="text-xs text-indigo-300 mb-1">{r.label}</div>
+                    <div className="text-xs text-blue-300 mb-1">{r.label}</div>
                     <div className="text-xl font-bold">{r.value}</div>
                   </div>
                 ))}
-                <div className="bg-[#FB923C]/20 border border-[#FB923C]/40 rounded-2xl p-4">
-                  <div className="text-xs text-orange-300 mb-1">예상 지원금</div>
-                  <div className="text-3xl font-black text-[#FB923C]">₩2,100,000</div>
-                  <div className="text-xs text-orange-200 mt-1">최대 70% 지원 기준</div>
+                <div className="bg-[#3B82F6]/20 border border-[#3B82F6]/40 rounded-2xl p-4">
+                  <div className="text-xs text-blue-300 mb-1">예상 지원금</div>
+                  <div className="text-3xl font-black text-[#60A5FA]">₩2,100,000</div>
+                  <div className="text-xs text-blue-200 mt-1">최대 70% 지원 기준</div>
                 </div>
               </div>
-              <Link href="/subsidy" className="block text-center mt-6 py-3 bg-white text-[#4F46E5] font-bold rounded-2xl hover:bg-indigo-50 transition-colors">
+              <Link href="/subsidy" className="block text-center mt-6 py-3 bg-white text-[#0F2B5B] font-bold rounded-2xl hover:bg-blue-50 transition-colors">
                 정확한 지원금 확인하기
               </Link>
             </div>
@@ -230,30 +229,30 @@ export default function Home() {
       </section>
 
       {/* Destinations */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-[#6366F1] font-semibold text-sm uppercase tracking-widest">인기 지역</span>
-            <h2 className="text-4xl md:text-5xl font-black text-[#0F172A] mt-3">
+            <span className="text-[#3B82F6] font-semibold text-sm uppercase tracking-widest">인기 지역</span>
+            <h2 className="text-4xl md:text-5xl font-black text-[#0F2B5B] mt-3">
               어디서 일할까요?
             </h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {destinations.map((d) => (
               <Link key={d.name} href="/destinations" className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group border border-gray-100">
-                <div className="h-44 gradient-primary flex items-center justify-center overflow-hidden">
+                <div className="h-44 gradient-electric flex items-center justify-center overflow-hidden">
                   <span className="text-7xl group-hover:scale-110 transition-transform duration-300 inline-block">{d.img}</span>
                 </div>
                 <div className="p-5">
-                  <span className="text-xs bg-indigo-50 text-[#6366F1] px-3 py-1 rounded-full font-semibold">{d.tag}</span>
-                  <h3 className="text-xl font-black text-[#0F172A] mt-2">{d.name}</h3>
+                  <span className="text-xs bg-blue-50 text-[#3B82F6] px-3 py-1 rounded-full font-semibold">{d.tag}</span>
+                  <h3 className="text-xl font-black text-[#0F2B5B] mt-2">{d.name}</h3>
                   <p className="text-[#64748B] text-sm mt-1">{d.desc}</p>
                 </div>
               </Link>
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/destinations" className="inline-block px-8 py-4 bg-[#6366F1] text-white font-bold rounded-2xl hover:bg-[#4F46E5] transition-all shadow-lg shadow-indigo-500/30">
+            <Link href="/destinations" className="inline-block px-8 py-4 bg-[#3B82F6] text-white font-bold rounded-2xl hover:bg-[#2563EB] transition-all shadow-lg shadow-blue-500/30">
               모든 지역 보기 →
             </Link>
           </div>
@@ -261,18 +260,18 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#F8F7FF]">
+      <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="gradient-cta rounded-3xl p-12 md:p-16 text-white shadow-2xl shadow-indigo-500/20">
+          <div className="gradient-cta rounded-3xl p-12 md:p-16 text-white shadow-2xl shadow-blue-900/30">
             <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">
               지금 바로 시작하세요
             </h2>
-            <p className="text-indigo-200 text-xl mb-10 leading-relaxed">
+            <p className="text-blue-200 text-xl mb-10 leading-relaxed">
               복잡한 지원금 신청은 우리에게 맡기고,<br />
               당신은 직원 행복에만 집중하세요.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/partner/company" className="px-10 py-4 bg-[#FB923C] text-white font-bold text-lg rounded-2xl hover:bg-[#F97316] transition-all shadow-lg shadow-orange-500/30">
+              <Link href="/partner/company" className="px-10 py-4 bg-[#3B82F6] text-white font-bold text-lg rounded-2xl hover:bg-[#2563EB] transition-all shadow-lg shadow-blue-500/40">
                 기업으로 시작하기 →
               </Link>
               <Link href="/partner/hotel" className="px-10 py-4 bg-white/10 backdrop-blur text-white font-bold text-lg rounded-2xl hover:bg-white/20 transition-all border border-white/20">

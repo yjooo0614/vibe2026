@@ -3,15 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --primary: #6366F1;
-  --primary-dark: #4F46E5;
-  --violet: #8B5CF6;
+  --navy: #0F2B5B;
+  --electric: #3B82F6;
+  --electric-dark: #2563EB;
   --accent: #FB923C;
-  --accent-dark: #F97316;
-  --dark: #0F172A;
-  --text: #1E293B;
+  --text: #0F172A;
   --muted: #64748B;
-  --soft-bg: #F8F7FF;
+  --bg: #F8FAFC;
 }
 
 body {
@@ -25,19 +23,16 @@ body {
     text-wrap: balance;
   }
   .gradient-hero {
-    background: linear-gradient(160deg, #0f0c29 0%, #302b63 55%, #0f3460 100%);
+    background: linear-gradient(160deg, #060f24 0%, #0f2b5b 55%, #1e3a8a 100%);
   }
-  .gradient-primary {
-    background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
-  }
-  .gradient-accent {
-    background: linear-gradient(135deg, #FB923C 0%, #F97316 100%);
+  .gradient-electric {
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
   }
   .gradient-cta {
-    background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 50%, #6366F1 100%);
+    background: linear-gradient(135deg, #0F2B5B 0%, #1e3a8a 50%, #3B82F6 100%);
   }
   .text-gradient {
-    background: linear-gradient(135deg, #FB923C, #F472B6);
+    background: linear-gradient(135deg, #3B82F6, #60A5FA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
